@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/background_splash"
+    tools:context="vn.com.example.view.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_212"
+        android:text="@string/asyntask"
+        android:textColor="@color/color_yellow"
+        android:textSize="@dimen/sp_40" />
 
-</android.support.constraint.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_15"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:progressDrawable="@drawable/background_progessbar" />
+
+</RelativeLayout>
